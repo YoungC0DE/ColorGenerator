@@ -3,7 +3,7 @@ const colorRGB = () => {
         G = document.getElementById("G").value,
         B = document.getElementById("B").value
     
-    let color = `rgb(${R},${G},${B})`
+    let color = `rgb(${R}, ${G}, ${B})`
     document.getElementById("resultColor").style.backgroundColor = color
     document.getElementById("code").innerHTML = "background-color: " + color
 }
