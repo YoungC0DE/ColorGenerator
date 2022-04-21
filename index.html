@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Generator</title>
+</head>
+
+<body>
+    <div id="resultColor" class="resultColor">
+        <span id="code">background-color: rgb(0,0,0)</span>
+    </div>
+    <main class="main">
+
+        <main class="content">
+            <div class="colors">
+                <div class="contentColor">
+                    <input id="R" class="R" type="range" min="0" max="255" oninput="numR.value=value" onchange="numR.value=value">
+                    <input id="numR" class="numRGB" type="number" maxlength="3" min="0" max="255">
+                </div>
+
+                <div class="contentColor">
+                    <input id="G" class="G" type="range" min="0" max="255" oninput="numG.value=value" onchange="numG.value=value">
+                    <input id="numG" class="numRGB" type="number" maxlength="3" min="0" max="255">
+                </div>
+
+                <div class="contentColor">
+                    <input id="B" class="B" type="range" min="0" max="255" oninput="numB.value=value" onchange="numB.value=value">
+                    <input id="numB" class="numRGB" type="number" maxlength="3" min="0" max="255">
+                </div>
+            </div>
+        </main>
+
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/YoungC0DE">Rafael Anjos Santos</a></p>
+        <span>YoungC0DE</span>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
