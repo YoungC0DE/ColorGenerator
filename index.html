@@ -11,24 +11,30 @@
 
 <body>
     <div id="resultColor" class="resultColor">
-        <span id="code">background-color: rgb(128, 128, 128)</span>
+        <section>
+            <input id="code" type="text" value="background-color: rgb(128, 128, 128)" readonly>
+            <button id="copy">Copy</button>
+        </section>
     </div>
     <main class="main">
 
         <main class="content">
             <div class="colors">
                 <div class="contentColor">
-                    <input id="R" class="R" type="range" min="0" max="255" oninput="numR.value=value" onchange="numR.value=value">
+                    <input id="R" class="R" type="range" min="0" max="255" oninput="numR.value=value"
+                        onchange="numR.value=value">
                     <input id="numR" class="numRGB" type="text" maxlength="3" min="0" max="255" readonly value="128">
                 </div>
 
                 <div class="contentColor">
-                    <input id="G" class="G" type="range" min="0" max="255" oninput="numG.value=value" onchange="numG.value=value">
+                    <input id="G" class="G" type="range" min="0" max="255" oninput="numG.value=value"
+                        onchange="numG.value=value">
                     <input id="numG" class="numRGB" type="text" maxlength="3" min="0" max="255" readonly value="128">
                 </div>
 
                 <div class="contentColor">
-                    <input id="B" class="B" type="range" min="0" max="255" oninput="numB.value=value" onchange="numB.value=value">
+                    <input id="B" class="B" type="range" min="0" max="255" oninput="numB.value=value"
+                        onchange="numB.value=value">
                     <input id="numB" class="numRGB" type="text" maxlength="3" min="0" max="255" readonly value="128">
                 </div>
             </div>
