@@ -10,7 +10,6 @@ Linguagens utilizadas:
 
 ## 
 <div align='center'>
-<img src="forGit.png" width="500">
 
 Acesse por aqui: [ColorGenerator](https://youngc0de.github.io/ColorGenerator/).
 

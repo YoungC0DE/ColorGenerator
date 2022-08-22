@@ -22,6 +22,8 @@ const colorRGB = () => {
     let color = `rgb(${R}, ${G}, ${B})`
     document.getElementById("resultColor").style.backgroundColor = color
     document.getElementById("code").value = "background-color: " + color
+
+    copyBtn.innerHTML = "Copy"
 }
 
 document.getElementById("R").addEventListener("input", colorRGB)
