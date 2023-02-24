@@ -10,7 +10,7 @@ Languages:
 
 ## 
 <div align='center'>
-<img src="https://user-images.githubusercontent.com/68437256/221274588-3c1c44a1-7718-4827-89e0-ee984bfa7670.png" width="500">
+<img src="https://user-images.githubusercontent.com/68437256/221274827-fa4f76f2-ce5e-45de-89de-e0b3d38b241e.png" width="500">
 
 
 To generate your color, click on here: [ColorGenerator](https://youngc0de.github.io/ColorGenerator/).
