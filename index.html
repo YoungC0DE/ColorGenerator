@@ -6,14 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./public/favicon.png">
     <title>Color Generator</title>
 </head>
 
 <body>
     <div id="resultColor" class="resultColor">
         <section>
-            <input id="code" type="text" value="background-color: rgb(128, 128, 128)" readonly>
-            <button id="copy">Copy</button>
+            <input id="rgbaCode" type="text" value="rgb(128, 128, 128, 1)" readonly>
+            <button type="button" id="copyRgba" class="copy">Copy</button>
+        </section>
+        <section>
+            <input id="hexCode" type="text" value="#808080ff" readonly>
+            <button type="button" id="copyHex" class="copy">Copy</button>
         </section>
     </div>
     <main class="main">
@@ -21,21 +26,23 @@
         <main class="content">
             <div class="colors">
                 <div class="contentColor">
-                    <input id="R" class="R" type="range" min="0" max="255" oninput="numR.value=value"
-                        onchange="numR.value=value">
-                    <input id="numR" class="numRGB" type="text" maxlength="3" min="0" max="255" readonly value="128">
+                    <input id="rangeR" class="R" type="range" min="0" max="255" value="128">
+                    <input id="numR" class="numRGBA" type="text" maxlength="3" min="0" max="255" value="128">
                 </div>
 
                 <div class="contentColor">
-                    <input id="G" class="G" type="range" min="0" max="255" oninput="numG.value=value"
-                        onchange="numG.value=value">
-                    <input id="numG" class="numRGB" type="text" maxlength="3" min="0" max="255" readonly value="128">
+                    <input id="rangeG" class="G" type="range" min="0" max="255" value="128">
+                    <input id="numG" class="numRGBA" type="text" maxlength="3" min="0" max="255" value="128">
                 </div>
 
                 <div class="contentColor">
-                    <input id="B" class="B" type="range" min="0" max="255" oninput="numB.value=value"
-                        onchange="numB.value=value">
-                    <input id="numB" class="numRGB" type="text" maxlength="3" min="0" max="255" readonly value="128">
+                    <input id="rangeB" class="B" type="range" min="0" max="255" value="128">
+                    <input id="numB" class="numRGBA" type="text" maxlength="3" min="0" max="255" value="128">
+                </div>
+
+                <div class="contentColor">
+                    <input id="rangeA" class="A" type="range" min="0" max="100" value="50">
+                    <input id="numA" class="numRGBA" type="text" maxlength="3" min="0" max="100" value="0.50" readonly>
                 </div>
             </div>
         </main>
@@ -43,7 +50,7 @@
     </main>
 
     <footer>
-        <p>Desenvolvido por <a href="https://github.com/YoungC0DE">Rafael Anjos Santos</a></p>
+        <p>Developer by <a href="https://github.com/YoungC0DE">Rafael Anjos</a></p>
         <span>YoungC0DE</span>
     </footer>
 
