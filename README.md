@@ -1,6 +1,6 @@
 # Color Generator 👨‍🎨
 
-> Generator of colors in the format RBG and Hexadecimal
+> Color generator in RGB and Hexadecimal format
 
 Languages:
 
